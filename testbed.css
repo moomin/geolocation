@@ -1,0 +1,115 @@
+body
+{
+  font-family: sans-serif;
+}
+
+div#online_status {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 1em;
+}
+
+div#online_status.online {color: #9d9;}
+div#online_status.offline {
+  background-color: #e55;  
+  color: #eee;
+}
+
+/* rules for control panel */
+
+div#options {margin: 1em;}
+
+div#options label {margin: 1em;}
+
+/* rules for control buttons */
+
+div#control_buttons {margin: 1em;}
+
+/* rules for tabs */
+
+div#tabs {margin: 1em;}
+
+div#tabs a
+{
+  color: #000;
+  margin-left: .5em;
+  margin-right: .5em;
+  padding: 0.5em .5em 0.3em .5em;
+  text-decoration: none;
+  border: solid 1px #eee;
+  border-bottom: none;
+  background-color: #ddd;
+}
+
+div#tabs a.selected {background-color: #aea;}
+
+div#tabs a:visited {color: #000;}
+
+div#tabs a:hover {color: #000;}
+
+/* rules for loggers */
+
+/* rules for textLogger */
+
+div.log-text p
+{
+  font-family: monospace;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2px 2px 2px 3px;
+  word-wrap: break-word;
+  wrap-break: break-all;
+}
+
+/* rules for tableLogger */
+
+div.log-table table
+{
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+div.log-table table tr th
+{
+  border: solid 1px #ddd;
+  background-color: #eee;
+  padding: .5em;
+}
+
+div.log-table table tr td
+{
+  border: solid 1px #ddd;
+  padding: 0.4em;
+}
+
+div.log-table table tr td.extra
+{
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* rules for JSON logger */
+
+div.log-json
+{
+  font-family: monospace;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* rules for GPX logger */
+
+div.log-gpx pre
+{
+  font-family: monospace;
+/*
+  word-wrap: break-word;
+  word-break: break-all;
+*/
+  margin: 0;
+  white-space: pre;
+  
+}
+
+

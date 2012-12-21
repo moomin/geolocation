@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<!-- <html manifest="cache.manifest">
+-->
+<html>
+<head>
+  <title>Geolocation testbed</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="testbed.js"></script>
+  <script type="text/javascript" src="loggers.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="testbed.css" />
+</head>
+<body>
+<div id="online_status"></div>
+<div>
+<form id="control_panel">
+  <div id="options">Geolocation options: 
+  <label>Timeout <input name="timeout" size="3" type="text" value="30" /></label>
+  <label>Maximum Age <input name="maximumAge" size="3" type="text" value="0" /></label>
+  <label>High Accuracy <input name="highAccuracy" type="checkbox" /></label>
+  </div>
+  <div id="control_buttons">Action:
+    <input id="position_button" type="button" name="position" value="Get position" />
+    <input id="watch_button" type="button" name="watch" value="" />
+    <input id="copy_button" type="button" name="copy" value="Copy to clipboard" />
+  </div>
+</form>
+</div>
+<div id="tabs">Log view:</div>
+<div id="logs"></div>
+</body>
+</html>
